@@ -1,0 +1,200 @@
+html, body, ul, li, p{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 30px;
+    background-color: #252525;
+
+}
+
+.menubar{
+    display: flex;
+}
+
+.menubar li{
+    margin-left: 15px;
+    padding: 10px;
+}
+
+.menubar li:hover{
+    background-color: #dadada;
+}
+
+.menubar li:hover > a{
+    color: black;
+}
+
+.container{
+    background-color: #4e8d9f;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.content{
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.side{
+    width: 20%;
+    background-color: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.side img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.center{
+    background-color: #ebeff8;
+    width: 50%;
+}
+
+.content .title{
+    text-align: center;
+    padding: 0;
+    font-size: 26px;
+}
+
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.main-itens{
+    margin: 15px 20px;
+    flex: 1 1 100px;
+
+}
+
+.main-itens .description{
+    font-size: 16px;
+    padding: 10px;
+}
+
+.main-itens img{
+    max-width: 100%;
+    display: block;
+    border-radius: 10px;
+}
+
+.main-itens img:hover{
+    transform: scale(1.1);
+    transition: 0.9s;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 30px;
+    background-color: #252525;
+}
+
+.footer .text{
+    color: white;
+    text-align: center;
+}
+
+.field{
+    display: flex;
+    width: 100%;
+    padding: 10px 50px;
+    flex-wrap: wrap;
+    text-align: justify;
+}
+.field label{
+    font-weight: 600;
+}
+
+.field label, input, textarea{
+    width: 100%;
+    padding: 2px 10px;
+    font-size: 16px;
+}
+
+.field input, textarea{
+    font-size: 14px;
+    border: 0px;
+    border-bottom: 2px solid #bababa;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: 0.7s;
+}
+
+.field input:focus, textarea:focus{
+    background-color: whitesmoke;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    border-bottom: 2px solid #0032a3;
+}
+
+.field textarea{
+    height: 100px;
+}
+
+
+.justified img{
+    width: 100px;
+    margin: 0 auto;
+}
+
+.justified p{
+    text-align: justify;
+    margin: 10px;
+}
+.field input[type=submit]{
+    margin: 0 auto;
+    width: 100px;
+    height: 40px;
+    background-color: #09212b;
+    color: white;
+    border:none;
+}
+.field input[type=submit]:hover{
+    background-color: white;
+    color: #09212b;;
+    border: 1px solid #09212b;
+}
+
+@media(max-width: 1030px) {
+    .content .title{
+        font-size: 16px;
+    }
+
+    .main-itens{
+        margin: 5px 10px;
+        flex: 1 1 50px;
+    
+    }
+    
+}
+
+@media(max-width: 850px) {
+    .main-itens .description{
+        font-size: 12px;
+        padding: 5px;
+    }
+}
